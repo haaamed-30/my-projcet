@@ -1,3 +1,4 @@
+/* start global rules */
 :root {
     --color-Dark-blue: #5D5FEF;
     --color-mideum-blue: #7879F1;
@@ -5,6 +6,8 @@
     --color-fushi: #FCDDEC;
     --color-background: #E5E5E5;
     --color-subColor: #fcfdfe;
+    --color-succes: #43a047;
+    --color-foucs: #0105ff;
 }
 body {
     background: var(--color-background) ;
@@ -15,13 +18,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* eng global rules */
+
+/* start successfuly later */
 .succe-box {
     position: relative;
     display: flex;
     justify-content: space-evenly;
     width: 350px;
     color: var(--color-subColor);
-    background-color: #43a047;
+    background-color: var(--color-succes);
     padding: 15px;
     border-radius: 3px;
 }
@@ -40,6 +46,9 @@ body {
 .succe-box--hidden {
     display: none;
 }
+/* end successfuly later */
+
+/* start login page */
 .container--hidden {
     display: none;
 }
@@ -53,7 +62,6 @@ body {
     padding-right: 12px;
     border-radius: 3px;
     box-shadow: -1px 3px 6px 2px #918f8f;
-    transition: 3s;
 }
 .container .login-header {
     display: flex;
@@ -177,11 +185,10 @@ body {
     opacity: 60%;
 }
 .container .login-input .hoverd-box {
-    background-color: #0105ff;
+    background-color: var(--color-foucs);
 }
 .container .login-input .login-box:hover {
-    /* background-color: var(--color-light-blue); */
-    border: 2px solid #0105ff;
+    border: 2px solid var(--color-foucs);
 }
 .container .login-input .login-box .form_button {
     width: 60px;
@@ -210,10 +217,449 @@ body {
     font-size: 12px;
     position: absolute;
     text-decoration: none;
-    bottom: 36px;
-    left: 9%;
+    bottom: 9px;
+    left: 0.4%;
     color: var(--color-mideum-blue);
 }
 .container a:hover {
     text-decoration: underline;
 }
+/* end login page */
+
+/* start sign page step one*/
+.sign_container {
+    height: 395px;
+    max-height: 395px;
+}
+.container .sign-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .sign-header i {
+    color: var(--color-Dark-blue);
+    position: relative;
+    left: 4%;
+    top: 21px;
+    padding: 2px;
+    font-size: 18px;
+}
+.container .sign-header .sign-use {
+    width: 200px;
+    position: relative;
+    left: -27%;
+    top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px;
+    opacity: 79%;
+}
+.container .sign-header a {
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    left: -2%;
+    padding-top: 5px;
+    color: var(--color-mideum-blue);
+}
+.container .sign-header a:hover {
+    text-decoration: underline;
+}
+.container .sign__welcome-message {
+    position: relative;
+    left: 15%;
+    top: -25px;
+    font-size: 14px;
+    opacity: 70%;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.container .sign_up-input {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    position: relative;
+    left: 9%;
+    top: -35px;
+    
+}
+.container .sign_up-input .form_user-input {
+    padding: 4px 0 4px 35px;
+    height: 41px;
+    margin-bottom: -8px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #00000038
+}
+.container .sign_up-input .form__input {
+    box-shadow: inset 0px 0px 4px 1px #00000038;
+}
+.container .sign_up-input input:hover {
+    border: 1px solid var(--color-light-blue);
+}
+.container .sign_up-input i {
+    position: relative;
+    top: -25px;
+    padding-left: 10px;
+    opacity: 30%;
+}
+.container .sign_up-input .key {
+    position: relative;
+    top: -25px;
+}
+.container .sign_up-input .next-box {
+    display: flex;
+    flex-direction: row;
+    width: 95px;
+    justify-content: end;
+    max-width: 110px;
+    height: 45px;
+    max-height: 45px;
+    align-self: flex-end;
+    cursor: pointer;
+    border: 1px solid var(--color-Drak-blue);
+    border-radius: 3px;
+    position: relative;
+    top: 15px;
+    background-color: var(--color-mideum-blue);
+    z-index: 4;
+    opacity: 60%;
+}
+.container .sign_up-input .hoverd-box {
+    background-color: var(--color-foucs);
+}
+.container .sign_up-input .next-box:hover {
+    border: 2px solid var(--color-foucs);
+}
+.container .sign_up-input .next-box .next_button {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--color-Drak-blue);
+    opacity: 80%;
+    border: none;
+    cursor: pointer;
+}
+.container .sign_up-input .next-box .next {
+    font-size: 23px;
+    opacity: 100%;
+    background-color: var(--color-light-blue);
+    line-height: 2;
+    color: #fff;
+    width: 30px;
+    height: 43px;
+    position: absolute;
+    left: 1%;
+    top: 1px;
+}
+/* end sign page step one */
+
+/* start sign page step two */
+.sign_container-step-two {
+    height: 550px;
+    max-height: 550px;
+}
+.container .stepTwo-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .stepTwo-header i {
+    color: var(--color-Dark-blue);
+    position: relative;
+    left: 4%;
+    top: 21px;
+    padding: 2px;
+    font-size: 18px;
+}
+.container .stepTwo-header .stepTwo-use {
+    width: 200px;
+    position: relative;
+    left: -27%;
+    top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px;
+    opacity: 79%;
+}
+.container .stepTwo-header a {
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    left: -2%;
+    padding-top: 5px;
+    color: var(--color-mideum-blue);
+}
+.container .stepTwo-header a:hover {
+    text-decoration: underline;
+}
+.container .sign__welcome-message-step-two {
+    position: relative;
+    left: 15%;
+    top: -25px;
+    font-size: 14px;
+    opacity: 70%;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.container .sign_up-input-stepTwo {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    position: relative;
+    left: 9%;
+    top: -25px;
+}
+.avatar {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    opacity: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #00000038;
+}
+.avatar .select_photo {
+    position: absolute;
+    padding: 4px 0 4px 35px;
+    height: 100%;
+    width: 100%;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.container .sign_up-input-stepTwo .form_user-input-stepTwo {
+    padding: 4px 0 4px 35px;
+    height: 41px;
+    margin-bottom: -8px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #00000038
+}
+.container .sign_up-input-stepTwo .form_user-textarea-stepTwo {
+    padding: 14px 0 4px 35px;
+    height: 100px;
+    margin-bottom: -8px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #00000038
+}
+.container .sign_up-input-stepTwo .form__input {
+    box-shadow: inset 0px 0px 4px 1px #00000038;
+}
+.container .sign_up-input-stepTwo input:hover {
+    border: 1px solid var(--color-light-blue);
+}
+.container .sign_up-input-stepTwo i {
+    position: relative;
+    top: -25px;
+    padding-left: 10px;
+    opacity: 30%;
+}
+.container .sign_up-input-stepTwo .aboutme {
+    position: relative;
+    top: -97px;
+}
+.maleL {
+    font-size: 14px;
+    opacity: 70%;
+}
+.maleI {
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+}
+.femaleL {
+    font-size: 14px;
+    opacity: 70%;
+}
+.femaleI {
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+}
+.container .sign_up-input-stepTwo .next-box-stepTwo {
+    display: flex;
+    flex-direction: row;
+    width: 95px;
+    justify-content: end;
+    max-width: 110px;
+    height: 45px;
+    max-height: 45px;
+    align-self: flex-end;
+    cursor: pointer;
+    border: 1px solid var(--color-Drak-blue);
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+    background-color: var(--color-mideum-blue);
+    z-index: 4;
+    opacity: 60%;
+}
+.container .sign_up-input-stepTwo .hoverd-box {
+    background-color: var(--color-foucs);
+}
+.container .sign_up-input-stepTwo .next-box-stepTwo:hover {
+    border: 2px solid var(--color-foucs);
+}
+.container .sign_up-input-stepTwo .next-box-stepTwo .next_button-stepTwo {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--color-Drak-blue);
+    opacity: 80%;
+    border: none;
+    cursor: pointer;
+}
+.container .sign_up-input-stepTwo .next-box-stepTwo .next {
+    font-size: 23px;
+    opacity: 100%;
+    background-color: var(--color-light-blue);
+    line-height: 2;
+    color: #fff;
+    width: 30px;
+    height: 43px;
+    position: absolute;
+    left: 1%;
+    top: 1px;
+}
+/* end sign page step two */
+
+/* start sign page step three */
+.sign_container-step-three {
+    width: 500px;
+    max-width: 500px;
+    height: 275px;
+    max-height: 275px;
+}
+.container .stepTh-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .stepTh-header i {
+    color: var(--color-Dark-blue);
+    position: relative;
+    left: 4%;
+    top: 19px;
+    padding: 2px;
+    font-size: 18px;
+}
+.container .stepTh-header .stepTh-use {
+    width: 200px;
+    position: relative;
+    left: -17%;
+    top: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px;
+    opacity: 79%;
+}
+.container .stepTh-header a {
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    left: -2%;
+    padding-top: 5px;
+    color: var(--color-mideum-blue);
+}
+.container .stepTh-header a:hover {
+    text-decoration: underline;
+}
+.container .sign__welcome-message-step-th {
+    position: relative;
+    left: 15%;
+    top: -25px;
+    font-size: 14px;
+    opacity: 70%;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.buttons_stepTh {
+    display: flex;
+    justify-content: space-around;
+}
+.container .sign_up-input-stepTh .create_team,
+.container .sign_up-input-stepTh .join_team {
+    padding: 15px;
+    height: 41px;
+    margin-bottom: -8px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0, 0.5) ;
+    opacity: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #00000038;
+    text-align: center;
+    line-height: 0.6;
+}
+.container .sign_up-input-stepTh .team_hover:hover {
+    color: #000;
+    opacity: 100%;
+    /* padding: 10px; */
+    border: 2px solid var(--color-subColor);
+}
+.input-stepTh {
+    position: relative;
+    top: 86px;
+    left: 4.5%;
+    font-size: 12px;
+    opacity: 70%;
+    padding-bottom: 3px;
+    padding-left: 2px;
+}
+.input-stepTh .checkB {
+    width: 11px;
+    position: relative;
+    top: 1.8px;
+    right: 0.5%;
+}
+
+.container .sign_up-input-stepTh .button-box-stepTh {
+    width: 95px;
+    max-width: 110px;
+    height: 45px;
+    max-height: 45px;
+    cursor: pointer;
+    border: 1px solid var(--color-Drak-blue);
+    color: var(--color-subColor);
+    border-radius: 3px;
+    position: relative;
+    top: 36px;
+    left: 80%;
+    background-color: var(--color-mideum-blue);
+    opacity: 60%;
+}
+.container .sign_up-input-stepTh .button-box-stepTh:hover {
+    border: 2px solid var(--color-foucs);
+}
+.container .sign_up-input-stepTh .hoverd-box {
+    background-color: var(--color-foucs);
+}
+/* end sign page step three */

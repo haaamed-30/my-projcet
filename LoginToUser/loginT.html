@@ -13,12 +13,16 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
+    <!-- start successfuly later -->
     <div class="succe-box--hidden" id="login-succ">
         <i class="fas fa-sign-in-alt"></i>
         <div class="login_succ">LOGIN SUCCESSFULLY THANKS! <br> Welcome In our Website...  </div>
         <i class="fas fa-handshake hand"></i>
     </div>
-    <div class="container" id="container-box">
+    <!-- end successfuly later -->
+
+    <!-- start login form -->
+    <div class="container " id="container-box">
         <div class="login-header">
             <i class="fas fa-sign-in-alt"></i>
             <h2 class="login-use">Login to use</h2>
@@ -38,9 +42,109 @@
                 <i class="fas fa-sign-in-alt entery"></i>
                 <button class="form_button" type="submit" id="login_button">Login</button>
             </div>
+            <a href="#" id="goToSteps">Need an Account?<br>Sign up FREE</a>
         </form>
-        <a href="#">Need an Account?<br>Sign up FREE</a>
     </div>
+    <!-- end login form -->
+
+    <!-- start sign up form -->
+    <!-- start step one -->
+    <div class="container sign_container container--hidden" id="container-stepOne">
+        <div class="sign-header">
+            <i class="fas fa-user-plus"></i>
+            <h2 class="sign-use">Create your account</h2>
+            <a href="#">Need Help?</a>
+        </div>
+        <div class="sub_container">
+            <span class="squers"></span>
+            <span class="squers"></span>
+        </div>
+        <p class="sign__welcome-message" id="messageStepOne">Welcome to sign page! Please enter your credentials to continue.</p>
+        <form id="form_signUp_stepOne" class="sign_up-input">
+            <input class="form_user-input" id="signUsername" type="text" name="username" placeholder="Username" required>
+            <i class="far fa-user"></i>
+            <input class="form_user-input" id="signEmail" type="email" name="email" placeholder="E-mail" required>
+            <i class="fas fa-envelope"></i>
+            <input class="form_user-input" id="signPass" type="password" name="pass" placeholder="Password" required>
+            <i class="fas fa-key key"></i>
+            <input class="form_user-input" id="singConfPass" type="password" name="conf-pass" placeholder="Confirm Password" required>
+            <i class="fas fa-key key"></i>
+            <div class="next-box" id="box-next">
+                <i class="fas fa-step-forward next"></i>
+                <button class="next_button" type="submit" id="nextButton">Next</button>
+            </div>
+        </form>
+    </div>
+    <!-- end step one -->
+
+    <!-- start step two -->
+    <div class="container sign_container-step-two container--hidden" id="container-stepTwo">
+        <div class="stepTwo-header">
+            <i class="fas fa-user-plus"></i>
+            <h2 class="stepTwo-use">Profile detalis</h2>
+            <a href="#">Need Help?</a>
+        </div>
+        <div class="sub_container">
+            <span class="squers"></span>
+            <span class="squers"></span>
+        </div>
+        <p class="sign__welcome-message-step-two" id="messageStepTwo">Tell us more about you! Please enter your credentials to continue.</p>
+        <form id="form_signUp_stepTwo" class="sign_up-input-stepTwo">
+            <!-- <div class="avatar"><a class="select_photo" href="#"><img src="#" alt="">+Add your photo</a></div> -->
+            <input class="form_user-input-stepTwo" id="fristName" type="text" name="Frname" placeholder="First name" required>
+            <i class="far fa-user"></i>
+            <input class="form_user-input-stepTwo" id="lasName" type="text" name="Lasname" placeholder="Last name" required>
+            <i class="far fa-user"></i>
+            <input class="form_user-input-stepTwo" id="headLine" type="text" name="headline" placeholder="Headline" required>
+            <i class="fas fa-heading"></i>
+            <textarea class="form_user-textarea-stepTwo" name="about-me" id="textAreaStTwo" cols="30" rows="10" placeholder="About me..." required></textarea>
+            <i class="fas fa-address-card aboutme"></i>
+            <br>
+            <div class="maleD">
+                <input class="maleI" type="radio" name="gender" value="Male" id="male">
+                <label class="maleL" for="male">Male</label>
+            </div>
+            <br>
+            <div class="femlaeD">
+                <input class="femaleI" type="radio" name="gender" value="Female" id="female">
+                <label class="femaleL" for="female">Female</label>
+            </div>
+            <div class="next-box-stepTwo" id="box-next-stepTwo">
+                <i class="fas fa-step-forward next"></i>
+                <button class="next_button-stepTwo" type="submit" id="nextButton_stepTwo">Next</button>
+            </div>
+        </form>
+    </div>
+    <!-- end step two -->
+
+    <!-- start step three -->
+    <div class="container sign_container-step-three container--hidden" id="container-stepThree">
+        <div class="stepTwo-header stepTh-header">
+            <i class="fas fa-asterisk"></i>
+            <h2 class="stepTwo-use stepTh-use">Team and Terms</h2>
+            <a href="#">Need Help?</a>
+        </div>
+        <div class="sub_container">
+            <span class="squers"></span>
+            <span class="squers"></span>
+        </div>
+        <p class="sign__welcome-message-step-th" id="messageStepTwo">You are in the last steps! Please enter your credentials to be done.</p>
+        <form class="sign_up-input-stepTh">
+            <div class="buttons_stepTh">
+                <button class="create_team team_hover">Create Team</button>
+                <button class="join_team team_hover">join Team</button>
+            </div>
+            <div class="input-stepTh">
+                <input class="checkB" type="checkbox" name="accept" id="accept" required>
+                <label for="accept">Accept Terms & Rules</label>
+            </div>
+            <button class="button-box-stepTh" type="submit" id="buttonStepTh">Sign Up</button>
+            
+        </div>
+        </form>
+    
+    <!-- end step three -->
+    <!-- end sign up form -->
 
     <script src="main.js" defer></script>
 </body>
