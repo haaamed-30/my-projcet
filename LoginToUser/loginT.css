@@ -8,6 +8,7 @@
     --color-subColor: #fcfdfe;
     --color-succes: #43a047;
     --color-foucs: #0105ff;
+    --mouse-help: help;
 }
 body {
     background: var(--color-background) ;
@@ -266,6 +267,7 @@ body {
 }
 .container .sign-header a:hover {
     text-decoration: underline;
+    cursor: var(--mouse-help);
 }
 .container .sign__welcome-message {
     position: relative;
@@ -402,6 +404,7 @@ body {
 }
 .container .stepTwo-header a:hover {
     text-decoration: underline;
+    cursor: var(--mouse-help);
 }
 .container .sign__welcome-message-step-two {
     position: relative;
@@ -590,6 +593,7 @@ body {
 }
 .container .stepTh-header a:hover {
     text-decoration: underline;
+    cursor: var(--mouse-help);
 }
 .container .sign__welcome-message-step-th {
     position: relative;
